@@ -1,3 +1,22 @@
+<h1>home page of codial</h1>
 
-        <h1>home page of codial</h1>
+<section id="feed-posts">
+        <h2>Posts</h2>
+        <form action="/posts/create" id="new-post-form" method="POST">
+                <textarea name="content" cols="30" rows="3"></textarea>
+                <input type="submit" value="Post">
+        </form>
+
+        <div id="post-container">
+                <ul>
+                        <% for(const post of posts){ %>
+                                <li>
+                                        <%= post.content  %>
+                                        <%= post.user.name  %>
+                                </li>
+                        <% } %>
+                </ul>
+        </div>
+</section>
+
 

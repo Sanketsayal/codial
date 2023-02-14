@@ -18,4 +18,10 @@
 
 .nav-menu li {
   display: inline;
+  color: white;
+}
+
+.nav-menu li p {
+  display: inline;
+  font-size: 1.5rem;
 }

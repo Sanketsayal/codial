@@ -1,5 +1,22 @@
+const Post=require('../models/post');
+
 module.exports.home= function(req,res){
-    return res.render('home',{
-        title:'codial'
-    })
+    // Post.find({},function(err,posts){
+    //     return res.render('home',{
+    //         title:'codial | Home',
+    //         posts:posts
+    //     })
+    // });
+
+    //populate the user 
+    Post.find({}).populate('user').exec(function(err,posts){
+        if(err){
+            console.log('error in fetching posts',err);
+        }
+        return res.render('home',{
+            title:'codial | Home',
+            posts:posts
+        });
+    });
+    
 };
