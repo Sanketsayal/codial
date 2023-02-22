@@ -52,7 +52,11 @@ module.exports.createSession=function(req,res){
 }
 
 module.exports.destroySession=function(req,res){
-    req.logout();
+    req.logout(function(err){
+        if(err){
+            console.log(err);
+        }
+    });
 
     return res.redirect('/');
 }

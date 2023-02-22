@@ -13,6 +13,11 @@
                 <ul>
                         <% for(const post of posts){ %>
                                 <li>
+                                        <% if(locals.user && locals.user.id==post.user.id){ %>
+                                        <small>
+                                                <a href="/posts/destroy/<%= post.id %>">X</a>
+                                        </small>
+                                        <% } %>
                                         <%= post.content  %>
                                         <%= post.user.name  %>
                                         <div class="post-comment">
@@ -24,6 +29,7 @@
                                                         </form>
                                                 <% } %>
                                                 <div id="post-comment-list">
+                                                        
                                                         <ul id="post-comment-<%= post._id%>">
                                                                 <% for(comment of post.comments){ %>
                                                                         <li>
