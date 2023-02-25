@@ -3,7 +3,6 @@ const Post=require('../models/post');
 
 
 module.exports.create=function(req,res){
-    console.log(req.body);
     Post.findById(req.body.post,function(err,post){
         // console.log('finding post');
         if(post){
