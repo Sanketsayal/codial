@@ -18,6 +18,7 @@ const flash=require('connect-flash');
 const customMWare=require('./config/middleware');
 const passortGoogle=require('./config/passport-google-oauth-strategy')
 
+
 //setup the chat server to use with socket.io
 const chatServer=require('http').Server(app);
 const chatSockets=require('./config/chat_sockets').chatSockets(chatServer)
@@ -58,7 +59,7 @@ app.use(session({
     },
     store: MongoStore.create(
         { 
-            mongoUrl: 'mongodb://0.0.0.0:27017/codial',
+            mongoUrl: env.db,
             autoRemove:'disabled' 
         },
         function(err){
