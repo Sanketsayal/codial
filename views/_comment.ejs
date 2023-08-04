@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/comment.css">
+
+<li id="comment-<%= comment.id %>" class="comment-item">
+    <div class="left">
+        <img src="<%= comment.user.avatar %>" alt="">
+    </div>
+
+    <div class="middle">
+        <p><span><%= comment.user.name %>: </span><%= comment.content %></p> 
+    </div>
+    
+    <div class="right">
+
+        <div class="comment-delete-btn">
+            <% if(locals.user && (locals.user.id==comment.user._id)){ %>
+                <a class="comment-delete-btn" href="/comments/destroy/<%= comment.id %>">X</a>
+            <% } %>
+        </div>
+        
+
+        <% if(locals.user){ %>
+            <a href=""><i class="fa-regular fa-thumbs-up"></i></a>    
+        <% } %> 
+
+    </div>
+    
+</li>

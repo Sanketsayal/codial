@@ -1,0 +1,22 @@
+#header-div{
+    background-color: rgb(24, 24, 24);    
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+    a{
+        color: white;
+        text-decoration: none;
+        h1{
+            margin: 0;
+        }
+    }
+}
+.nav-menu{
+    li{
+        display: inline;
+        color: white;
+        font-size: 1.3rem;
+    }
+}

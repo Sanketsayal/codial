@@ -1,0 +1,19 @@
+.comment-item{
+    img{
+        height: 4vh;
+        width: 4vh;
+        border-radius: 50%;
+    }
+    .comment-head{
+        display: flex;
+        align-items: center;
+        p{
+            margin-left: 2vh;
+        }
+        a{
+            margin-left: 36.5vw;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

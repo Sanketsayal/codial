@@ -1,0 +1,122 @@
+#home-container{
+    display: flex;
+    #feed-posts{
+        width:70%;
+        padding-left:5%;
+        margin-top: 2vh;
+
+        #post-list-container ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #post-form{
+            width:45vw;
+            height: 20vh;
+            background-color: rgb(24, 24, 24);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            border: 0.5px solid rgb(50, 48, 48);
+
+            #user-pic img{
+                height: 10vh;
+                width: 10vh;
+                border-radius: 50%;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            textarea{
+                background-color: rgb(40, 38, 38);
+                border-radius: 30px;
+                color: gray;
+                padding: 15px;
+                border: none;
+                resize: none;
+            }
+            input{
+                height: 4.5vh;
+                width: 12vh;
+                background-color: black;
+                color: white;
+                border: none;
+                font-size: 1.1rem;
+                border-radius: 5px;
+                margin-top: 1vh;
+            }
+            input:hover{
+                cursor: pointer;
+            }
+            input:active{
+                transform: scale(0.95);
+            }
+        }
+    }
+    #friends{
+        width:15%;
+        padding: 1%;
+        border-left: 1px solid black;
+        border: 0.5px solid rgb(50, 48, 48);
+        color: white;
+        border-radius: 10px;
+        background-color: rgb(24, 24, 24);
+        margin-top: 4vh;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        #friends-head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2{
+                margin: 0;
+            }
+            i{
+                height: 4vh;
+                width: 4vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            i:hover{
+                
+                border-radius: 50%;
+                cursor: pointer;
+                background-color: rgb(40, 38, 38);
+
+            }
+        }
+
+        .friends-card{
+            margin-top: 1vh;
+            width: 90%;
+            height: 6vh;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding-left: 1vw;
+            font-size: 1.1rem;
+
+            img{
+                height: 4vh;
+                width: 4vh;
+                border-radius: 50%;
+                margin-right: 1vw;
+            }
+        }
+
+        .friends-card:hover{
+            background-color: rgb(40, 38, 38);
+            
+        }
+    }
+}

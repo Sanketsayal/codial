@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/css/home.css">
+
+
+<div id="home-container">
+        <section id="feed-posts">
+                <% if(locals.user){ %>
+                        <div id="post-form">
+                                <div id="user-pic">
+                                        <img src="<%= locals.user.avatar %>" alt="">
+                                </div>
+                                <form action="/posts/create" id="new-post-form" method="POST">
+                                        <textarea name="content" cols="65" rows="3" placeholder="What's on your name?"></textarea>
+                                        <input id="Post" type="submit" value="Post">     
+                                </form>
+                        </div>
+                <% } %>
+        
+                <div id="post-list-container">
+                        <ul>
+                                <% for(post of posts){ %>
+                                   <%- include('_post') -%>    
+                                <% } %>
+                        </ul>
+                </div>
+        </section>
+        
+        <section id="friends">
+                <div id="friends-head">
+                        <h2>My Friends</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <% for(u of users){ %>
+                        <a href="/users/profile/<%= u.id %>">
+                                <div class="friends-card">
+                                        <img src="<%= u.avatar  %>" alt="">
+                                        <%= u.name %>
+                                </div>    
+                        </a>
+                <% } %>      
+        </section>
+        <%- include('chat_box') -%>
+</div>
+<!-- <script src="/js/home.js"></script> -->
+
+<script>
+    $('.toggle-like-button').each(function(){
+        let self = this;
+        let toggleLike = new ToggleLike(self);
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.1/socket.io.js" integrity="sha512-Z6C1p1NIexPj5MsVUunW4pg7uMX6/TT3CUVldmjXx2kpip1eZcrAnxIusDxyFIikyM9A61zOVNgvLr/TGudOQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/chat_engine.js"></script>

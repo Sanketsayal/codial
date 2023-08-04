@@ -1,0 +1,69 @@
+.signin-page{
+    height:84vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .signin-card{
+        height: 60%;
+        width: 30%;
+        background-color: rgb(24, 24, 24);
+        border: 0.5px solid rgb(50, 48, 48);
+        border-radius: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            input{
+                height: 5vh;
+                width: 70%;
+                margin-bottom: 2vh;
+                background-color:rgb(40, 38, 38);
+                color: gray;
+                border: 0;
+                font-size: 1.1rem;
+            }
+            input:focus{
+                outline: none;
+            }
+            input[type=submit]{
+                width: 30%;
+            }
+            input[type=submit]:active{
+                transform: scale(.9);
+            }
+            input[type=submit]:hover{
+                cursor: pointer;
+            }
+        }
+
+        a{
+            width: 60%;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            .google-card{
+                height: 5vh;
+                width: 100%;
+                background-color:rgb(40, 38, 38);
+                display: flex;
+                align-items: center;
+                
+                i{
+                    margin:0 2vw;
+                }
+            }
+            .google-card:active{
+                transform: scale(.98);
+            }
+        }
+        
+    }
+}

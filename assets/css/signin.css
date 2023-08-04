@@ -1,0 +1,74 @@
+.signin-page {
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-page .signin-card {
+  height: 60%;
+  width: 30%;
+  background-color: #181818;
+  border: 0.5px solid #323030;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-page .signin-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.signin-page .signin-card form input {
+  height: 5vh;
+  width: 70%;
+  margin-bottom: 2vh;
+  background-color: #282626;
+  color: gray;
+  border: 0;
+  font-size: 1.1rem;
+}
+
+.signin-page .signin-card form input:focus {
+  outline: none;
+}
+
+.signin-page .signin-card form input[type=submit] {
+  width: 30%;
+}
+
+.signin-page .signin-card form input[type=submit]:active {
+  transform: scale(0.9);
+}
+
+.signin-page .signin-card form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+.signin-page .signin-card a {
+  width: 60%;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.signin-page .signin-card a .google-card {
+  height: 5vh;
+  width: 100%;
+  background-color: #282626;
+  display: flex;
+  align-items: center;
+}
+
+.signin-page .signin-card a .google-card i {
+  margin: 0 2vw;
+}
+
+.signin-page .signin-card a .google-card:active {
+  transform: scale(0.98);
+}

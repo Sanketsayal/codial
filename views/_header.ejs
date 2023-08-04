@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/header.css">
+<header>
+    <div id="header-div">
+        <div>
+            <a href="/">
+                <h1>
+                    <i class="fa-sharp fa-solid fa-share-nodes"></i>                    
+                    Codial
+                </h1>
+            </a>
+        </div>
+        
+        <div class="nav-menu">
+            <ul>
+                <% if(locals.user){ %>
+                    <li>
+                        <a href="/users/profile/<%= user.id %>"><%= user.name %></a>
+                    </li>
+                    <li>
+                        <a href="/users/sign-out">/Sign Out</a>
+                    </li>
+                <% }else {%>
+                    <li>
+                        <a href="/users/sign-in">Sign In/</a>
+                    </li>
+                    <li>
+                        <a href="/users/sign-up">Sign Up</a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</header>

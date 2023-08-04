@@ -1,0 +1,33 @@
+.comment-item{
+  width: 98%;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.comment-item .left img {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+}
+
+.comment-item .middle{
+  margin-left: 1vw;
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.comment-item .middle p{
+  margin: 0;
+}
+
+.comment-item .right a{
+  color: white;
+  text-decoration: none;
+}
+
+.comment-item .right .comment-delete-btn{
+  margin-bottom: 2vh;
+}
+
+
+

@@ -1,0 +1,109 @@
+.post-container{
+    background-color: rgb(24, 24, 24);
+    border: 0.5px solid rgb(50, 48, 48);
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    width: 45vw;
+    color: white;
+
+    .post-details{
+        height: 7vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        img{
+            height: 6vh;
+            width: 6vh;
+            border-radius: 50%;
+            margin-left: 1vw;
+        }
+        p{
+            margin: 0;
+            margin-left: 1vw;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin-left: 35vw;
+        }
+    }
+    .content{
+        margin-left: 1vw ;
+        font-size: 1.3rem;
+    }
+    .post-actions{
+        width: 100%;
+        height: 6vh;
+        // border-bottom: .5px solid rgb(50, 48, 48);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .actions{
+            width: 10vw;
+            height: 4vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+
+        }
+        .actions:hover{
+            background-color: rgb(40, 38, 38);
+            cursor: pointer;
+        }
+        .actions:active{
+            transform: scale(.98);
+        }
+    }
+
+    .height{
+        height: auto !important;
+    }
+
+    .post-comments{
+        height: 0;
+        overflow: hidden;
+        margin-left: 2vh;
+        
+        .post-form{
+            display: flex;
+            height: 8vh;
+            align-items: center;
+            img{
+                height: 4vh;
+                width: 4vh;
+                border-radius: 50%;
+            }
+            input[type=text]{
+                height: 3vh;
+                padding: 1vh;
+                background-color: rgb(40, 38, 38);
+                color: gray;
+                width: 30vw;
+                border: 0;
+                border-radius: 50px;
+                margin-left: 5vh;
+            }
+            input[type=submit]{
+                height: 4vh;
+                width: 15vh;
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                margin-left: 3vh;
+            }
+            input[type=text]:focus{
+                outline: none;
+            }
+        }
+    }
+
+}

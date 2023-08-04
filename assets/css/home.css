@@ -1,0 +1,129 @@
+#home-container {
+  display: flex;
+}
+
+#home-container #feed-posts {
+  width: 70%;
+  padding-left: 5%;
+  margin-top: 2vh;
+}
+
+#home-container #feed-posts #post-list-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#home-container #feed-posts #post-form {
+  width: 45vw;
+  height: 20vh;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  border: 0.5px solid #323030;
+}
+
+#home-container #feed-posts #post-form #user-pic img {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+}
+
+#home-container #feed-posts #post-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#home-container #feed-posts #post-form textarea {
+  background-color: #282626;
+  border-radius: 30px;
+  color: gray;
+  padding: 15px;
+  border: none;
+  resize: none;
+}
+
+#home-container #feed-posts #post-form input {
+  height: 4.5vh;
+  width: 12vh;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 1vh;
+}
+
+#home-container #feed-posts #post-form input:hover {
+  cursor: pointer;
+}
+
+#home-container #feed-posts #post-form input:active {
+  transform: scale(0.95);
+}
+
+#home-container #friends {
+  width: 15%;
+  height: 40vh;
+  padding: 1%;
+  border-left: 1px solid black;
+  border: 0.5px solid #323030;
+  color: white;
+  border-radius: 10px;
+  background-color: #181818;
+  margin-top: 4vh;
+}
+
+#home-container #friends a {
+  color: white;
+  text-decoration: none;
+}
+
+#home-container #friends #friends-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#home-container #friends #friends-head h2 {
+  margin: 0;
+}
+
+#home-container #friends #friends-head i {
+  height: 4vh;
+  width: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-container #friends #friends-head i:hover {
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #282626;
+}
+
+#home-container #friends .friends-card {
+  margin-top: 1vh;
+  width: 90%;
+  height: 6vh;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  font-size: 1.1rem;
+}
+
+#home-container #friends .friends-card img {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  margin-right: 1vw;
+}
+
+#home-container #friends .friends-card:hover {
+  background-color: #282626;
+}
